@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Vizitka</title>
+</head>
+<body>
+
+	<div class="background"></div>
+
+	<div class="media-player">
+		<p><i class="fa fa-volume-up"></i>
+		Tarazanio_Jazziano</p>
+		<button id="music-play" class="btn btn-primary fa fa-play"></button>
+		<button id="music-stop" class="btn btn-danger fa fa-stop float-right"></button>
+		<audio id="music" autoplay src="audio/Music.mp3">
+			Тег audio не поддерживается вашим браузером. 
+		</audio>
+	</div>
+
+	<div class="container-fluid">
+		<div class="invis"></div>
+		<div class="header-img">
+			<div class="header-img-in"></div>
+		</div>
+		<div class="header-name"><a href="">GMOD-SERVER-NAME</a></div>
+		<div class="header-desc">Downloading from workshop: gmod-server-content...</div>
+
+		<div class="panel-list row">
+			<div class="panel col-md-6 col-sm-12 panel-border-left">
+				<div class="panel-head row">
+					<i class="fa fa-question col-md-1"></i>
+					<p class="col-md-11">Rules</p>
+				</div>
+				<p>
+					<ul>
+						<li>Respect other players</li>
+						<li>Don't use cheats / scripts / bugs</li>
+						<li>Don't minge</li>
+						<li>Don't use Expression2 for killing other players</li>
+						<li>Don't try crash server</li>
+						<li>Only English in chat</li>
+					</ul>
+				</p>
+			</div>
+			<div class="panel col-md-6 col-sm-12 panel-border-right">
+				<div class="panel-head row">
+					<i class="fa fa-question col-md-1"></i>
+					<p class="col-md-11">Other information: </p>
+				</div>
+				<p>
+					<ul>
+						<li>SITE</li>
+						<li>VK</li>
+						<li>FACEBOOK</li>
+						<li>TWITTER</li>
+						<li>STEAM GROUP</li>
+						<li>https://github.com/gameizeazy</li>
+					</ul>
+				</p>
+			</div>
+			<div class="author-label">
+				https://github.com/gameizeazy/
+			</div>
+		</div>
+	</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/site.css">
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('#music-play').click(function() {
+			$('#music')[0].play()
+		});
+
+		$('#music-stop').click(function() {
+			$('#music')[0].pause()
+		});
+	});
+</script>
+	
+</body>
+</html>
